@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Tailwind</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header
+      class="h-auto md:h-[100%] bg-cover bg-[url('./assets/BG.png')] text-[#043A53]"
+    >
+      <nav
+        class="bg-cover bg-[url('./assets/BG.png')] fixed top-0 z-20 w-[100vw] md:px-12 p-4 lg:x-14 md:bg-transparent h-16 flex items-center justify-center"
+      >
+        <div class="flex items-center justify-between w-full">
+          <img src="/dist/advance/assets/Logo.png" class="w-24 h-5" alt="" />
+          <ul class="hidden md:flex font-semibold">
+            <li class="md:mx-2 lg:mx-2 cursor-pointer">Features</li>
+            <li class="md:mx-2 lg:mx-2 cursor-pointer">Solutions</li>
+            <li class="md:mx-2 lg:mx-2 cursor-pointer">Company</li>
+            <li class="md:mx-2 lg:mx-2 cursor-pointer">Resourses</li>
+            <li></li>
+            <li class="md:mx-2 lg:mx-2 cursor-pointer">Contact</li>
+          </ul>
+          <div class="md:hidden text-3xl text-[#043A53]">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="hidden md:flex">
+            <button
+              class="md:px-2 lg:px-4 py-1 bg-white text-[#12141D] mr-2 rounded-2xl"
+            >
+              Log In
+            </button>
+            <button
+              class="md:px-2 lg:px-4 py-1 bg-[#043A53] text-white mr-2 rounded-2xl"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="flex flex-wrap w-full h-full pt-14">
+      <div
+        class="text-center self-center px-4 w-full lg:h-[230px] md:px-2 lg:px-20 md:text-left md:w-6/12 md:flex md:flex-col md:justify-between"
+      >
+        <h3 class="text-3xl md:text-4xl text-black font-bold md:px-0 p-4">
+          Find High-Potential Customers with
+          <span class="block text-[#043A53]">Trustco.</span>
+        </h3>
+        <p class="text-[#404040] mt-0 md:mt-2">
+          We provide sales teams and professionals with the knowledge, skill and
+          discipline they need to be 10x more successful.
+        </p>
+        <button
+          class="rounded-3xl bg-[#043A53] text-white px-3 py-2 md:mt-5 mt-5 w-fit mx-auto md:m-0"
+        >
+          Explore Our Works
+          <span class="text-white bg-[#0d2f2f] rounded-full p-2 ml-2">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </button>
+      </div>
+
+      <!-- image -->
+      <div class="w-full md:w-6/12 h-full relative">
+        <img
+          src="/dist/advance/assets/Man mobile.png"
+          class="w-full h-full"
+          alt="man_image"
+        />
+        <div
+          class="w-24 h-24 md:w-32 md:h-32 justify-center items-center bg-[#043A53] rounded-full right-8 md:right-16 lg:right-24 bottom-32 md:bottom-48 lg:bottom-64 flex flex-col absolute"
+        >
+          <div
+            class="text-white flex items-center justify-center w-5 h-5 md:h-8 md:w-8 rounded-full bg-[#f2f2f2] bg-opacity-10"
+          >
+            <i class="fa-solid fa-arrow-up"></i>
+          </div>
+          <div class="text-white text-3xl">98%</div>
+          <div class="text-white text-sm">Sales Up</div>
+        </div>
+        <div class="absolute bottom-4 left-12 lg:left-12">
+          <img
+            src="/dist/advance/assets/Images.png"
+            class="w-28 h-28 mg:w-36 mg:h-36"
+            alt="Images_.png"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="w-full bg-gray-50 md:px-16 py-4 border flex flex-wrap justify-evenly items-center font-semibold"
+    >
+      <p class="w-full text-center lg:w-auto">
+        Trusted by the best in the world
+      </p>
+      <img
+        class="mx-2 my-2 w-24"
+        src="/dist/advance/assets/Google.png"
+        alt="Google"
+      />
+      <img
+        class="mx-2 my-2 w-24"
+        src="/dist/advance/assets/Atlassian.png"
+        alt="Atlassian"
+      />
+      <img
+        class="mx-2 my-2 w-24"
+        src="/dist/advance/assets/Canon.png"
+        alt="Canon"
+      />
+      <img
+        class="mx-2 my-2 w-24"
+        src="/dist/advance/assets/Walmart.png"
+        alt="Walmart"
+      />
+      <img
+        class="mx-2 my-2 w-24"
+        src="/dist/advance/assets/Amazon.png"
+        alt="Amazon"
+      />
+    </div>
+
+    <div class="bg-[#043A53] pt-16">
+      <div class="flex flex-wrap justify-between lg:px-20 px-4">
+        <div
+          class="text-white md:text-4xl text-2xl font-bold pb-3 lg:w-6/12 lg:px-12"
+        >
+          High-Level Sales
+          <span class="text-yellow-600">Teams & Professionals</span>
+        </div>
+        <div class="text-white lg:px-12 lg:w-6/12">
+          Circuit is flexible and affordable and offers you exceptional support
+          to achieve your career goals. Circuit is a Global training provider
+          based across the UK that specialises.
+        </div>
+      </div>
+      <div class="w-[100%] pt-12 lg:w-10/12 mx-auto relative">
+        <img
+          class="w-full h-full object-cover"
+          src="/dist/advance/assets/team video BG.png"
+          alt="team video BG.png"
+        />
+        <img
+          src="/dist/advance/assets/Play.png"
+          class="absolute w-12 h-12 lg:w-32 lg:h-32 top-[50%] bottom-[50%] left-[50%] right-[50%] -translate-x-[50%]"
+          alt="Play.png"
+        />
+      </div>
+    </div>
+
+    <div class="pt-12 flex flex-wrap flex-row justify-evenly px-4">
+      <div class="md:w-[350px] md:pr-28 pl-5 md:pt-[55px] w-full">
+        <div class="md:pb-4">
+          <button
+            class="bg-[#043A53] text-white rounded-3xl px-4 py-1 md:mb-2 tracking-wide mb-5"
+          >
+            Beneficial
+          </button>
+        </div>
+        <div class="text-3xl font-bold md:pb-0 mb-6">Beneficial Elements</div>
+        <div class="mb-6">
+          An awesome & powerful tools for your business, increase business
+          revenue
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-100 rounded-2xl md:pt-4 md:px-4 md:w-[220px] md:pb-5 my-4 py-4 px-4"
+      >
+        <img
+          src="/dist/advance/assets/Illust 1.png"
+          class="md:pb-5 md:w-16 w-16 pb-4"
+          alt="Illust 1.png"
+        />
+        <div class="text-xl font-bold md:pb-5 pb-4">Happy Customers</div>
+        <div>
+          Productive agents are happy agents. Give them all the support tools
+          and information they need to best serve your customers.
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-100 rounded-2xl md:pt-4 md:px-4 md:w-[220px] md:pb-5 my-4 py-4 px-4"
+      >
+        <img
+          src="/dist/advance/assets/Illust 2.png"
+          class="md:pb-5 md:w-16 w-14 pb-4"
+          alt="Illust 1.png"
+        />
+        <div class="text-xl font-bold md:pb-5 pb-4">Best Integrations</div>
+        <div>
+          Productive agents are happy agents. Give them all the support tools
+          and information they need to best serve your customers.
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-100 rounded-2xl md:pt-4 md:px-4 md:w-[220px] md:pb-5 my-4 py-4 px-4"
+      >
+        <img
+          src="/dist/advance/assets/Illust 3.png"
+          class="md:pb- md:w-16 w-14 pb-3"
+          alt="Illust 1.png"
+        />
+        <div class="text-xl font-bold md:pb-5">Grow Without Problems</div>
+        <div>
+          Productive agents are happy agents. Give them all the support tools
+          and information they need to best serve your customers.
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-950 w-full h-full flex flex-wrap md:mt-12 mt-4 md:pt-8">
+      <div class="pl-60 md:px-28 md:w-[950px] pt-12 md:pl-28 md:pb-16">
+        <h3 class="text-white md:text-5xl text-2xl font-bold">
+          Take Your Customer
+        </h3>
+        <h3 class="text-white md:text-5xl text-2xl font-bold">
+          Service To The Next Level
+        </h3>
+        <button class="bg-[#ffb700e6] text-white py-1 px-2 rounded-3xl mt-10">
+          Get 14 Days Free Trail
+          <span class="text-white bg-[#dc9e01e6] rounded-full px-2">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </button>
+        <p class="mt-6 text-gray-400">No credit card required</p>
+      </div>
+      <div class="w-full md:w-4/12 px-4 pt-16">
+        <img src="/dist/advance/assets/Decorations.png" alt="Decorations.png" />
+      </div>
+    </div>
+
+    <div class="flex flex-wrap justify-evenly flex-row pt-8 pb-7">
+      <div>
+        <div class="md:w-36 w-32">
+          <img src="/dist/advance/assets/Logo.png" alt="Logo.png" />
+        </div>
+        <div
+          class="flex flex-wrap justify-center items-center gap-5 pt-5 text-xl md:text-2l opacity-40 pb-8"
+        >
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="md:w-[420px] pb-8 px-3">
+        <p>
+          An awesome & poweful tools for your business, increase business
+          revenue. with evaluating in depth variety of data sets and including
+          the speed of tech adaptation we can build bridges between any
+          companies and their customers.
+        </p>
+      </div>
+      <div>
+        <ul class="leading-8">
+          <li class="font-bold text-xl md:pb-3">Home</li>
+          <li>Features</li>
+          <li>Solutions</li>
+          <li>Resources</li>
+          <li>Pricing</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="leading-8">
+          <li class="font-bold text-xl md:pb-3">About Us</li>
+          <li>Company</li>
+          <li>Contant</li>
+          <li>Career</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer
+      class="bg-gray-200 h-auto py-6 md:py-0 text-gray-500 md:px-8 w-full flex flex-wrap justify-between items-start "
+    >
+      <div class="md:flex flex-wrap w-full justify-between items-start">
+        <div class="md:py-4 text-center">&copy2022-2023 Trustco.</div>
+        
+        <div>
+          <ul class="flex gap-x-4 text-xs md:pt-2 text-center items-center justify-center w-full leading-10">
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Language</li>
+          </ul>
+        </div>
+        <div class="text-center md:py-4">
+            <span><i class="fa-sharp fa-solid fa-globe  "></i></span>
+            <span class="">English</span>
+            <span><i class="fa-solid fa-caret-down "></i></span>
+        </div>
+        
+      </div>
+    </footer>
+  </body>
+</html>
